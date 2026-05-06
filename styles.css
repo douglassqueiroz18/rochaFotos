@@ -321,15 +321,13 @@ h1 em {
 }
 
 /* ── TRACK ── */
-.carousel-track img {
-  position: absolute;
-  inset: 0;
+.carousel-track {
+  position: relative;
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Preenche o espaço */
-  object-position: center center; /* Mantém o foco no meio da ação */
-  opacity: 0;
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  height: 0;
+  padding-bottom: 66.67%; /* Proporção ideal para fotos horizontais (3:2) */
+  overflow: hidden;
+  background: #000;
 }
 
 .carousel-track img {
