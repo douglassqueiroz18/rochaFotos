@@ -321,17 +321,25 @@ h1 em {
 }
 
 /* ── TRACK ── */
-.carousel-track {
-  position: relative;
-  height: 520px;
-  overflow: hidden;
+.carousel-track img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche o espaço */
+  object-position: center center; /* Mantém o foco no meio da ação */
+  opacity: 0;
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .carousel-track img {
   position: absolute;
   inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+  /* 'center 15%' garante que o topo da foto (cabeças) apareça mais que os pés */
+  object-position: center 15%; 
   opacity: 0;
   transition: opacity 0.7s ease, transform 0.7s ease;
   transform: scale(1.04);
@@ -457,11 +465,9 @@ h1 em {
 @media (max-width: 900px) {
   .intro { grid-template-columns: 1fr; gap: 2rem; }
   .carousel-grid { grid-template-columns: 1fr; }
-  .carousel-track { height: 240px; }
 }
 
 @media (max-width: 600px) {
   h1 { font-size: 2.8rem; }
-  .carousel-track { height: 200px; }
   .intro-stat { gap: 1.5rem; }
 }
