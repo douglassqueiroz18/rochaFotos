@@ -141,12 +141,52 @@ h1 em {
   transition: transform 0.2s, box-shadow 0.2s;
   animation: fadeUp 0.8s 0.45s ease both;
 }
-
+.hero-contact-whatsapp {
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 2.2rem;
+  background: linear-gradient(135deg, var(--warm), var(--amber));
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fadeUp 0.8s 0.45s ease both;
+}
+.hero-contact-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 2.2rem;
+  background: linear-gradient(135deg, var(--warm), var(--amber));
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fadeUp 0.8s 0.45s ease both;
+}
 .hero-cta:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 40px rgba(232,148,58,0.45);
 }
+.hero-contact-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45);
+}
 
+.hero-contact-instagram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(188, 24, 136, 0.45);
+}
 .hero-scroll {
   position: absolute;
   bottom: 2.5rem;
